@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<div>
+			<h1> WILL YOU BE MY VALENTINE ABATOT? </h1>
+			<button id="yesButton"> YES </button>
+			<button id="noButton"> NO </button>
+		</div>
+	
+	<style>
+		div {
+			text-align: center;
+			vertical-align: middle;
+		}
+		button{
+			text-align: center;
+		}
+		#noButton {
+			position: absolute;
+		}
+	</style>
+	
+	<script>
+		document.getElementById("yesButton").addEventListener("click", function(){
+			alert("YOWGWUIWGDHI I LOVE YOU SO MUCH");
+		});
+		var b = document.getElementById("noButton");
+		b.addEventListener("click", change);
+		function change() {
+			var i = Math.floor(Math.random() * 1000) + 1;
+			var j = Math.floor(Math.random() * 700) + 1;
+			b.style.left = i + "px";
+			b.style.top = j + "px";
+		}
+	</script>
+	</body>
+</html>
